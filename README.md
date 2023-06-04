@@ -4,6 +4,7 @@ AIM:
    To write a python program for simulating RARP protocols using UDP
    
 ALGORITHM:
+```
    Client
     1. Start the program
     2. Using datagram sockets UDP function is established.
@@ -15,8 +16,9 @@ ALGORITHM:
     2. Server maintains the table in which IP and corresponding MAC addresses are stored.
     3. Read the MAC address which is send by the client.
     4. Map the IP address with its MAC address and return the IP address to client.
-    
+```    
 PROGRAM:
+```
    CLIENT:
    import socket
    s=socket.socket()
@@ -39,7 +41,7 @@ PROGRAM:
       ip=input("Enter MAC Address : ")   
       s.send(ip.encode())
       print("Logical Address",s.recv(1024).decode())
-      
+```      
 OUTPUT:
 CLIENT:
 ![c5](https://github.com/aparnabalasubrmanian/EX-5/assets/123351172/a4d4490f-d742-4e5d-960b-5bbd8ffea179)
